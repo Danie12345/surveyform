@@ -4,20 +4,21 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Document</title>
     </head>
 
     <body>
         <header class="header">
             <h1 class="title">Survey Form </h1>   
-            <p id="desciption title">This is a description</p>   
+            <p id="desciption-title">This is a description</p>   
         </header>
 
         <div class="container">
-            <div class="surveyChart">
+            
                 <form id="surveyForm"> 
 
-                    <div id="firstInput"> 
+                    <div class= "divsInCommon" id="firstInput"> 
                         <label id="titleFullName">Full Name</label>
                         <input name="name"
                         class="formInput"
@@ -27,7 +28,7 @@
                         >
                     </div>
 
-                    <div id="secondInput"> 
+                    <div class= "divsInCommon" id="secondInput"> 
                         <label id="email-input">Email</label>
                         <input name="email"
                         class="formInput"
@@ -37,7 +38,7 @@
                         >
                     </div>
 
-                    <div id="thirdInput"> 
+                    <div class= "divsInCommon" id="thirdInput"> 
                         <label id="phoneNumber">Phone Number</label>
                         <input name="number"
                         class="formInput"
@@ -47,7 +48,7 @@
                         >
                     </div>
 
-                    <div id="fourthInput"> 
+                    <div class= "divsInCommon" id="fourthInput"> 
                         <label id="currentRole" for="roles">Current Role</label>
                         <br>
                         <select name="roles" class="formInput" id="optionsInput">
@@ -63,7 +64,7 @@
                         </select>
                     </div>
 
-                    <div id="fifthInput">
+                    <div class= "divsInCommon" id="fifthInput">
                         <label id="recommend">Would you recommend our services?</label>
                         <div>
                             <input type="radio" class="inputRadio" name="definitely" value="2">
@@ -79,7 +80,7 @@
                         </div>
                     </div>
 
-                    <div id="sixthInput">
+                    <div class="divsInCommon" id="sixthInput">
                         <label id="suggestions">Suggestions? Comments?</label>
                         <br>
                         <textarea class="formInput" id="comment" placeholder="Share your suggestions here!"></textarea>
@@ -91,7 +92,7 @@
                         </button>
                     </div>
                 </form>
-            </div>
+           
         </div>
     </body>
 </html>
