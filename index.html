@@ -15,84 +15,81 @@
         </header>
 
         <div class="container">
-            
-                <form id="surveyForm"> 
+            <form id="surveyForm"> 
+                <div class= "divsInCommon" id="firstInput"> 
+                    <label id="name-label">Full Name</label>
+                    <input name="name"
+                    class="formInput"
+                    type="text"
+                    placeholder="Name"
+                    id="name"        
+                    >
+                </div>
 
-                    <div class= "divsInCommon" id="firstInput"> 
-                        <label id="titleFullName">Full Name</label>
-                        <input name="name"
-                        class="formInput"
-                        type="text"
-                        placeholder="Juan Cruz"
-                        id="name"        
-                        >
-                    </div>
+                <div class= "divsInCommon" id="secondInput"> 
+                    <label id="email-label">Email</label>
+                    <input name="email"
+                    class="formInput"
+                    type="email"
+                    placeholder="Email"
+                    id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
+                    >
+                </div>
 
-                    <div class= "divsInCommon" id="secondInput"> 
-                        <label id="email-input">Email</label>
-                        <input name="email"
-                        class="formInput"
-                        type="email"
-                        placeholder="juancruz@gmail.com"
-                        id="email"        
-                        >
-                    </div>
+                <div class= "divsInCommon" id="thirdInput"> 
+                    <label id="number-label">Age</label>
+                    <input name="number"
+                    class="formInput"
+                    type="number"
+                    placeholder="Age"
+                    id="number" pattern="[0-9]" min="18" max="100" required
+                    >
+                </div>
 
-                    <div class= "divsInCommon" id="thirdInput"> 
-                        <label id="phoneNumber">Phone Number</label>
-                        <input name="number"
-                        class="formInput"
-                        type="tel"
-                        placeholder="234-544-533"
-                        id="number"        
-                        >
-                    </div>
+                <div class= "divsInCommon" id="fourthInput"> 
+                    <label id="dropdown" for="roles">Current Role</label>
+                    <br>
+                    <select name="roles" class="formInput" id="optionsInput">
+                        <option value="role1">
+                            Option 1
+                        </option>
+                        <option value="role2">
+                            Option 2
+                        </option>
+                        <option value="role3" selected>
+                            Option 3
+                        </option>
+                    </select>
+                </div>
 
-                    <div class= "divsInCommon" id="fourthInput"> 
-                        <label id="currentRole" for="roles">Current Role</label>
-                        <br>
-                        <select name="roles" class="formInput" id="optionsInput">
-                            <option value="role1">
-                                Option 1
-                            </option>
-                            <option value="role2">
-                                Option 2
-                            </option>
-                            <option value="role3" selected>
-                                Option 3
-                            </option>
-                        </select>
-                    </div>
-
-                    <div class= "divsInCommon" id="fifthInput">
-                        <label id="recommend">Would you recommend our services?</label>
-                        <div>
-                            <input type="radio" class="inputRadio" name="definitely" value="2">
-                            <label for="definitely">Definitely!</label>
-                        </div>
-                        <div>
-                            <input type="radio" class="inputRadio" name="unsure" value="2">
-                            <label for="unsure">Unsure</label>
-                        </div>
-                        <div>
-                            <input type="radio" class="inputRadio" name="no" value="2">
-                            <label for="no">Totally not!</label>
-                        </div>
-                    </div>
-
-                    <div class="divsInCommon" id="sixthInput">
-                        <label id="suggestions">Suggestions? Comments?</label>
-                        <br>
-                        <textarea class="formInput" id="comment" placeholder="Share your suggestions here!"></textarea>
-                    </div>
-
+                <div class= "divsInCommon" id="fifthInput">
+                    <label id="recommend">Would you recommend our services?</label>
                     <div>
-                        <button type="submit" id="submit">
-                            Submit
-                        </button>
+                        <input type="radio" class="inputRadio" name="recommend" value="2">
+                        <label for="definitely">Definitely!</label>
                     </div>
-                </form>
-           
+                    <div>
+                        <input type="radio" class="inputRadio" name="recommend" value="2">
+                        <label for="unsure">Unsure</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="inputRadio" name="recommend" value="2">
+                        <label for="no">Totally not!</label>
+                    </div>
+                </div>
+
+                <div class="divsInCommon" id="sixthInput">
+                    <label id="suggestions">Suggestions? Comments?</label>
+                    <br>
+                    <textarea class="formInput" id="comment" placeholder="Share your suggestions here!"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" id="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
         </div>
     </body>
 </html>

@@ -57,7 +57,15 @@ label {
     width: 100%;
     display: block;
     padding: 5px;
-    background-color: blue;
-    
+    background-color: rgb(104, 104, 236);
+}
 
+@media only screen and (max-width: 500px) {
+  body {
+    max-width: 50%;
+    background-color: rgb(192, 43, 192);
+  }
+  h1 {
+    font-size: 10px;
+  }
 }
